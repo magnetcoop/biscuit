@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/magnetcoop/biscuit.svg?branch=master)](https://travis-ci.org/magnetcoop/biscuit)
+
 # Biscuit
 
 A Clojure library for calculating message digest(ive)s. The digest algorithms implemented in biscuit are all variations of [CRCs](http://en.wikipedia.org/wiki/Cyclic_redundancy_check) and are designed to verify the integrity of messages sent over noisy channels.
