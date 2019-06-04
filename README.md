@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/magnetcoop/biscuit.svg?branch=master)](https://travis-ci.org/magnetcoop/biscuit)
+[![Build Status](https://travis-ci.com/magnetcoop/biscuit.svg?branch=master)](https://travis-ci.com/magnetcoop/biscuit)
 
 # Biscuit
 
