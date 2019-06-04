@@ -1,4 +1,4 @@
-(defproject magnet/biscuit "1.1.0"
+(defproject magnet/biscuit "1.1.1-SNAPSHOT"
   :description "Calculate message digests."
   :url "https://github.com/magnetcoop/biscuit"
   :license {:name "Eclipse Public License"
