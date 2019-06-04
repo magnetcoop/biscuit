@@ -14,10 +14,26 @@ Add the following dependency to your `project.clj` file:
 
 ## Usage
 
+Digests can be calculated on raw byte arrays or on strings. When calculated on strings, they need to be converted to raw bytes arrays. In that case, you can specify the character encoding of the string. If you don't specify it, UTF-8 encoding is used by default.
+
 ```clojure
-(require '[biscuit.core :as digest])
-(digest/crc8 "hobnob")
-; 17
+user> (require '[biscuit.core :as digest])
+nil
+user> (digest/crc8 (byte-array [195, 161, 195, 169, 195, 173, 195, 179, 195, 186]))
+166
+user> (digest/crc8 (byte-array [225, 0, 233, 0, 237, 0. 243, 0, 250, 0]))
+203
+user> (digest/crc8 "hobnob")
+17
+user> (digest/crc8 "áéíóú")
+166
+user> (digest/crc8 "áéíóú" "UTF-8")
+166
+user> (digest/crc8 "áéíóú" "ISO-8859-1")
+7
+user> (digest/crc8 "áéíóú" "UTF-16LE")
+203
+user> 
 ```
 
 The following algorithms are supported:
